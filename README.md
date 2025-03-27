@@ -13,7 +13,13 @@
 brew install cmake
 git clone https://github.com/ggerganov/llama.cpp
 cd llama.cpp
-make clean && make LLAMA_METAL=1
+
+mkdir build
+cd build
+cmake .. -DLLAMA_METAL=ON
+cmake --build . --parallel
+
+cd ..
 
 pip install huggingface_hub
 ```
