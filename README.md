@@ -4,8 +4,18 @@
 - Python Ver: ```python3.12```
 - Uses Mistral 7B LLM Model
 - huggingface_hub
+- pip install llama-cpp-python
+
+## requirements
+
+```bash
+pip install huggingface_hub
+pip install llama-cpp-python
+```
 
 ## Setup 
+
+
 
 **The ```llama.ccp``` is used to supercharge the silicon chip**
 
@@ -20,8 +30,6 @@ cmake .. -DLLAMA_METAL=ON
 cmake --build . --parallel
 
 cd ..
-
-pip install huggingface_hub
 ```
 
 **Dowloading the model in the llama directory**
