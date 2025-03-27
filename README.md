@@ -34,5 +34,6 @@ wget https://huggingface.co/TheBloke/Mistral-7B-v0.1-GGUF/resolve/main/mistral-7
 
 **Running the model**
 ```bash
-./main -m ./models/mistral-7b-v0.1.Q4_0.gguf -c 2048 -n 256 --threads 8 --n-gpu-layers 50
+cd build/bin
+./llama-server -m ../../models/mistral-7b-v0.1.Q4_0.gguf -c 2048 -n 256 --threads 8 --n-gpu-layers 50
 ```
