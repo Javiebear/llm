@@ -6,6 +6,8 @@
 
 ### Mac OS Silicon Chip
 
+The ```llama.ccp``` is used to supercharge the silicon chip
+
 ```bash
 brew install cmake
 git clone https://github.com/ggerganov/llama.cpp
